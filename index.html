@@ -44,22 +44,33 @@
                 <div class="col-2">
                     <img src="img/brDeporte.png" class="img-rounded" alt="Cinque Terre" width="60" height="40">
                 </div>
-                <div class="col-md-7 col-6 columna">
+                <div class="col-5 col-sm-6 col-md-7  columna">
                     <form>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="¿Encontró lo que buscaba?">
+                        <div class="input-group justify-content-center">
+                            <input type="text" class="form-control d-none d-md-block" placeholder="Buscar">
                             <span class="input-group-btn">
-                                <button class="btn btn-platzi" type="button"><span id="buscar" class="d-md-block d-none">Buscar</span>
-                                <i class="fa fa-search d-block d-md-none"></i>  
-                                </button>
+                                <button class="btn btn-platzi d-none d-md-block"  type="button"><i class="fa fa-search"></i></button>
+                                <button class="btn btn-platzi d-block d-md-none" id="btnBuscar" data-toggle="collapse" data-target="#navbar" type="button"><i class="fa fa-search"></i></button>
                             </span>
                         </div>
+                        
                     </form>
                 </div>
-                <div class="col-3 columna justify-content-start">
-                    <a class="nav-link" href="#">+56912345678</a>
+                <div class="col-3 columna text-right">
+                    <a class="nav-link" href="#"><i class="fas fa-phone">+56912345678</i></a>
                 </div>
             </div>
+            <div class="row " >
+                <div id="navbar" class="navbar-collapse collapse">
+                    <div class="input-group  visible-xs navbar-form navbar-left">
+                        <input type="text" name="search" class="search form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button class="btn btn-platzi" id="btnBuscar"  type="button"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
     <!-- /Busqueda-->
@@ -94,13 +105,13 @@
     </nav>
     <!-- /Menu -->
     <!-- Carousel-->
-    <div id="carousel-container" class="container-fluid">
+    <div id="carousel-container" >
             <div id="productosCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
+                <ul class="carousel-indicators">
                     <li data-target="#productosCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#productosCarousel" data-slide-to="1"></li>
                     <li data-target="#productosCarousel" data-slide-to="2"></li>
-                </ol>
+                </ul>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img class="d-block w-100" src="img/imgCarousel.svg" alt="Primer producto">
@@ -124,11 +135,11 @@
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#productosCarousel" role="button" data-slide="prev">
+                <a class="carousel-control-prev container-fluid" href="#productosCarousel" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Anterior</span>
                 </a>
-                <a class="carousel-control-next" href="#productosCarousel" role="button" data-slide="next">
+                <a class="carousel-control-next container-fluid" href="#productosCarousel" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Siguiente</span>
                 </a>
@@ -140,9 +151,9 @@
         <div class="container-fluid">
             <h3 class="text-center">Productos</h3>
             <!-- Productos-->
-            <div class="col-xs-12 col-md-12 listado-productos">
+            <div class="col-sm-12 col-md-12 listado-productos">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-md-3">
                         <div class="card">
                             <img src="img/producto1.svg" alt="Producto 1" class="card-img-top img-fluid">
                             <div class="card-body">
@@ -151,7 +162,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-md-3">
                         <div class="card">
                             <img src="img/producto1.svg" alt="Producto 1" class="card-img-top img-fluid">
                             <div class="card-body">
@@ -160,7 +171,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-md-3">
                         <div class="card">
                             <img src="img/producto1.svg" alt="Producto 1" class="card-img-top img-fluid">
                             <div class="card-body">
@@ -169,7 +180,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-md-3">
                         <div class="card">
                             <img src="img/producto1.svg" alt="Producto 1" class="card-img-top img-fluid">
                             <div class="card-body">
@@ -178,7 +189,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <!--<div class="col-xs-6 col-lg-3">
                         <div class="card">
                             <img src="img/producto1.svg" alt="Producto 1" class="card-img-top img-fluid">
                             <div class="card-body">
@@ -187,7 +198,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="col-xs-6 col-lg-3">
                         <div class="card">
                             <img src="img/producto1.svg" alt="Producto 1" class="card-img-top img-fluid">
                             <div class="card-body">
@@ -196,7 +207,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="col-xs-6 col-lg-3">
                         <div class="card">
                             <img src="img/producto1.svg" alt="Producto 1" class="card-img-top img-fluid">
                             <div class="card-body">
@@ -205,7 +216,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="col-xs-6 col-lg-3">
                         <div class="card">
                             <img src="img/producto1.svg" alt="Producto 1" class="card-img-top img-fluid">
                             <div class="card-body">
@@ -214,7 +225,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="col-xs-6 col-lg-3">
                         <div class="card">
                             <img src="img/producto1.svg" alt="Producto 1" class="card-img-top img-fluid">
                             <div class="card-body">
@@ -223,7 +234,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="col-6 col-lg-3">
                         <div class="card">
                             <img src="img/producto1.svg" alt="Producto 1" class="card-img-top img-fluid">
                             <div class="card-body">
@@ -232,7 +243,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="col-xs-6 col-lg-3">
                         <div class="card">
                             <img src="img/producto1.svg" alt="Producto 1" class="card-img-top img-fluid">
                             <div class="card-body">
@@ -241,7 +252,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="col-xs-6 col-lg-3">
                         <div class="card">
                             <img src="img/producto1.svg" alt="Producto 1" class="card-img-top img-fluid">
                             <div class="card-body">
@@ -250,7 +261,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <div class="row">
                     <div id="paginator-container" class="col-12 text-center ">
                         <nav aria-label="Page navigation example">

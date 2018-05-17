@@ -19,11 +19,15 @@ body{
 .columna{
     border: 1px solid red;
 }
+
 */
-#productosCarousel img{
+
+
+
+/*#productosCarousel img{
     margin: 0 auto;
     height: 50%;
-}
+}*/
 #info-container h4{
     margin: 1em 0;
 }
